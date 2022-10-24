@@ -30,6 +30,11 @@ html, body {
 	font-family: Montserrat;
 }
 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 ._container {
     max-width: 1140px;
     margin: 0 auto;
@@ -86,13 +91,27 @@ html, body {
 }
 
 /* Main */
+.main {
+    flex: 1 1 auto;
+}
+.main__container {
+    padding: 50px 0;
+}
+.main__items {
+}
+.main__item {
+}
+.main__item-img {
+    max-width: 360px;
+}
+.main__item-title {
+}
+.main__item-rating {
+}
 
 /* Footer */
 .footer {
     background-color: #252b42;
     color: #fafafa;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     height: 50px;
 }

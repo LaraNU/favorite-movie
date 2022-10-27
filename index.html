@@ -45,6 +45,23 @@
         <footer class="footer">
             <div class="_container">footer</div>
         </footer>
+
+        <div class="backdrop" id="backdrop"></div>
+        <div class="modal" id="modal">
+            <label for="modal-title">Movie Title:
+                <input type="text" id="modal-title" class="modal-title modal-input">
+            </label>
+            <label for="modal-img-url">Image URL: 
+                <input type="text" id="modal-img-url" class="modal-img-url modal-input">
+            </label>
+            <label for="modal-rating">Rating: 
+                <input type="number" min="1" max="10" id="modal-rating" class="modal-rating modal-input">
+            </label>
+            <div class="modal-buttons">
+                <button id="modal-btn-cancle" class="modal-btn cancel">Cancel</button>
+                <button id="modal-btn-add" class="modal-btn add">Add Movie</button>
+            </div>
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>

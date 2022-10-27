@@ -98,15 +98,30 @@ html, body {
     padding: 50px 0;
 }
 .main__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .main__item {
+    border: 2px solid #252b42;
 }
 .main__item-img {
     max-width: 360px;
 }
+.main__item-description {
+    padding: 7px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .main__item-title {
+    font-size: 20px;
+    font-weight: 600;
 }
 .main__item-rating {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* Footer */

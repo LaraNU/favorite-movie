@@ -139,6 +139,10 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
+    display: none;
+}
+.backdrop.visible {
+    display: block;
 }
 .modal {
     background: white;
@@ -148,6 +152,10 @@ html, body {
     left: 25%;
     z-index: 100;
     padding: 25px 40px;
+    display: none;
+}
+.modal.visible {
+    display: block;
 }
 label {
     display: block;

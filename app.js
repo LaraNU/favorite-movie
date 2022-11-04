@@ -56,16 +56,18 @@ const addMovieHandler = () => {
     const imageValue = document.getElementById('modal-img-url')
     const ratingValue = document.getElementById('modal-rating')
 
-/*     if (titleValue === '' || imageValue === '' || ratingValue === '') {
-        alert('Please! Fill correct form')
-        return
-    } */ //doesn't work
-
     const newMovie = {
         title: titleValue.value.trim(),
         image: imageValue.value.trim(),
         rating: ratingValue.value.trim()
     }
+
+    const { title, image, rating } = newMovie //destructuring assignment
+
+    if (title === '' || image === '' || rating === '') {
+        alert('Please! Fill correct form')
+        return
+    } //doesn't work
 
     movies.push(newMovie)
 

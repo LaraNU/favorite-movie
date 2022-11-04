@@ -41,6 +41,9 @@ const renderMovie = (title, image, rating) => {
     const newMovieElement = document.createElement('div')
     newMovieElement.className = 'main__item'
     newMovieElement.innerHTML = `
+                        <div class="close-item">
+                            <img src="./image/icons8-multiply-30.png" alt="close">
+                        </div>
                         <img src="${image}" alt="${title}" class="main__item-img">
                         <div class="main__item-description">
                             <h2 class="main__item-title">${title}</h2>

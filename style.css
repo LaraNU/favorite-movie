@@ -116,7 +116,17 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
+.close-item {
+    background-color: #e7e6e6;
+    position: absolute;
+    right: 0;
+    /* display: none; */
+}
+/* .close-item:hover {
+    display: block;
+} */
 .main__item-img {
     max-width: 360px;
 }

@@ -46,7 +46,7 @@ html, body {
 .header {
     background-color: #252b42;
     color: #fafafa;
-    height: 60px;
+    height: 80px;
     text-transform: uppercase;
 }
 .header__container {
@@ -57,7 +57,7 @@ html, body {
     align-items: center;
 }
 .header__title {
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: 700;
 }
 .header__menu {
@@ -96,6 +96,13 @@ html, body {
 }
 .main__container {
     padding: 50px 0;
+}
+.main-description {
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 120px;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(37,43,66,0.6);
 }
 .main__items {
     display: flex;

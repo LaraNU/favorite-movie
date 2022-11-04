@@ -5,11 +5,20 @@ const modalBtnCancel = document.getElementById('modal-btn-cancel')
 const modalBtnAdd = document.getElementById('modal-btn-add')
 const userInputs = document.querySelectorAll('input')
 const movieList = document.getElementById('main__items')
+const mainDescription = document.getElementById('main-description')
 
 const movies = []
 
 const toggleBackdrop = () => {
     backdrop.classList.toggle('visible')
+}
+
+const updateUI = () => {
+    if (movies.length === 0) {
+        mainDescription.style.display = 'block'
+    } else {
+        mainDescription.style.display = 'none'
+    }
 }
 
 const toggleModal = () => {
@@ -47,6 +56,11 @@ const addMovieHandler = () => {
     const imageValue = document.getElementById('modal-img-url')
     const ratingValue = document.getElementById('modal-rating')
 
+/*     if (titleValue === '' || imageValue === '' || ratingValue === '') {
+        alert('Please! Fill correct form')
+        return
+    } */ //doesn't work
+
     const newMovie = {
         title: titleValue.value.trim(),
         image: imageValue.value.trim(),
@@ -63,7 +77,9 @@ const addMovieHandler = () => {
         newMovie.rating
     )
 
+    cancelModalBtn()
     clearMovieInputs()
+    updateUI()
 }
 
 addMovie.addEventListener('click', toggleModal)
